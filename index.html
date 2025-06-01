@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Real-time Collaboration Tool</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Real-time Collaboration Tool</h1>
+
+  <div class="container">
+    <!-- Shared Document Editor -->
+    <section>
+      <h2>Shared Document Editor</h2>
+      <div id="editor" contenteditable="true" spellcheck="false"></div>
+      <div id="cursors"></div>
+    </section>
+
+    <!-- Whiteboard -->
+    <section>
+      <h2>Shared Whiteboard</h2>
+
+      <div class="tools">
+        <label for="colorPicker">Color:</label>
+        <input type="color" id="colorPicker" value="#000000" />
+
+        <label for="brushSize">Brush Size:</label>
+        <input type="range" id="brushSize" min="1" max="10" value="2" />
+      </div>
+
+      <canvas id="whiteboard"></canvas>
+      <div>
+        <button id="clearBtn">Clear Whiteboard</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
