@@ -127,10 +127,12 @@ Store documents persistently with database integration.
 
 The document is initially created and edited by User A in one editor interface:
 
+![Image](https://github.com/user-attachments/assets/ab69da76-08eb-4a31-a2f0-67b8fb480537)
+
 
 
 **2️⃣ Synchronized Update on the Second Editor**
 
 The same document appears in real-time on the second editor, where User B begins making changes:
 
-
+![Image](https://github.com/user-attachments/assets/7cb4e69b-aea4-4780-a2f5-869fbaba4a14)
